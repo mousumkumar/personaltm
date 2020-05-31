@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.app.Activity
+import android.app.Dialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -58,6 +59,12 @@ class Main2Activity : AppCompatActivity() {
         if(item.itemId == R.id.action_logout) {
             AuthUI.getInstance().signOut(this)
             finish()
+        }
+
+        if (item.itemId == R.id.action_about) {
+            val dialog = Dialog(this)
+            dialog.setContentView(R.layout.about_dialog)
+            dialog.show()
         }
         return super.onOptionsItemSelected(item)
     }
