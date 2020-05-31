@@ -6,6 +6,11 @@
     <TextView
         android:id="@+id/items"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_recycler_bg"
+        android:padding="70dp"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
 
 </LinearLayout>

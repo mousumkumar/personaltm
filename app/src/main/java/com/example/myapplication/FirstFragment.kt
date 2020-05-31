@@ -100,6 +100,5 @@ class FirstFragment : Fragment() {
                 layoutManager = LinearLayoutManager(activity)
                 adapter = mAdapter
             }
-
     }
 }
