@@ -22,28 +22,32 @@
         android:layout_height="300dp"
         android:background="@drawable/task_bg"
         android:layout_margin="5dp"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:inputType="textMultiLine"/>
 
     <Button
         android:id="@+id/move_to_completed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mark as complete"
-        android:background="@drawable/complete_button"/>
+        android:background="@drawable/complete_button"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/move_to_incomplete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mark as incomplete"
-        android:background="@drawable/incomplete_button"/>
+        android:background="@drawable/incomplete_button"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/delete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Delete"
-        android:background="@drawable/delete_button"/>
+        android:background="@drawable/delete_button"
+        android:layout_margin="5dp"/>
 
 
 </LinearLayout>
