@@ -56,12 +56,18 @@ class MainActivity : AppCompatActivity() {
             if (resultCode == Activity.RESULT_OK) {
                 // Successfully signed in
                 val user = FirebaseAuth.getInstance().currentUser
-                // ...
+                val typeOfLogin = user?.providerData?.get(1)?.providerId
+                Log.e("message",typeOfLogin.toString())
+                if(typeOfLogin.equals("password")) {
+                    if (user != null) {
+                        if(!user.isEmailVerified) {
+                            user.sendEmailVerification()
+                        }
+                    }
+                }
+                startActivity(intent)
             } else {
-                // Sign in failed. If response is null the user canceled the
-                // sign-in flow using the back button. Otherwise check
-                // response.getError().getErrorCode() and handle the error.
-                // ...
+                //TODO
             }
         }
     }
@@ -76,10 +82,12 @@ class MainActivity : AppCompatActivity() {
             Log.e("message",typeOfLogin.toString())
             if(typeOfLogin.equals("password")) {
                 if(!user.isEmailVerified) {
-
+                    //TODO
                 }
             }
             startActivity(intent)
+            finishActivity(RC_SIGN_IN)
+            finish()
         }
     }
 }
