@@ -28,7 +28,9 @@
         android:id="@+id/delete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete"/>
+        android:text="Delete"
+        android:background="@drawable/delete_button"
+        android:layout_margin="5dp"/>
 
 
 </LinearLayout>
