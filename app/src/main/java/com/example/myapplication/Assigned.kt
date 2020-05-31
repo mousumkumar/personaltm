@@ -17,4 +17,8 @@ class Assigned : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        finish()
+    }
+
 }
