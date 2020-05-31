@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -43,6 +44,7 @@ class Completed : AppCompatActivity() {
                     //Toast.makeText(activity, child, Toast.LENGTH_SHORT).show()
                     val dialog = Dialog(this@Completed)
                     dialog.setContentView(R.layout.completed_dialog)
+                    dialog.window?.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT)
                     dialog.dialog_title.text = model.title
                     dialog.dialog_description.text = model.description
 

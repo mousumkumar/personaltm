@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.app.ActionBar
 import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -63,6 +64,7 @@ class FirstFragment : Fragment() {
                     //Toast.makeText(activity, child, Toast.LENGTH_SHORT).show()
                     val dialog = Dialog(context!!)
                     dialog.setContentView(R.layout.assigned_dialog)
+                    dialog.window?.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT)
                     dialog.dialog_title.text = model.title
                     dialog.dialog_description.text = model.description
                     dialog.move_to_completed.setOnClickListener {
