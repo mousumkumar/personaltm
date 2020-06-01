@@ -3,7 +3,7 @@
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,22 +18,7 @@
             android:label="@string/title_activity_assigned"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Main2Activity" />
-        <activity
-            android:name=".fifthActivity"
-            android:label="@string/title_activity_fifth"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".fourthactivity"
-            android:label="@string/title_activity_fourthactivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".thirdActivity"
-            android:label="@string/title_activity_third"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".secondActivity"
-            android:label="@string/title_activity_second"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

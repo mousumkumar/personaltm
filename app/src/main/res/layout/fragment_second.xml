@@ -20,7 +20,8 @@
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:hint="Task Title..."/>
 
         <EditText
             android:id="@+id/dialog_description"
@@ -30,12 +31,14 @@
             android:layout_margin="5dp"
             android:padding="5dp"
             android:inputType="textMultiLine"
-            android:gravity="top"/>
+            android:gravity="top"
+            android:hint="Task Description..."/>
 
         <Button
             android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Task" />
+            android:text="Add Task"
+            android:background="@drawable/complete_button"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

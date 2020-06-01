@@ -28,7 +28,8 @@
         android:id="@+id/move_to_assigned"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reassign"/>
+        android:text="Reassign"
+        android:background="@drawable/complete_button"/>
 
     <Button
         android:id="@+id/delete"

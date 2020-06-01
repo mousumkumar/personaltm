@@ -3,7 +3,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="completed">#0d730e</color>
-    <color name="incomplete">#431a78</color>
-    <color name="delete">#7a0b0b</color>
+    <color name="completed">#1089c2</color>
+    <color name="incomplete">#1089c2</color>
+    <color name="delete">#1089c2</color>
 </resources>
