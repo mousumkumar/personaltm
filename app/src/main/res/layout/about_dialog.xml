@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -19,7 +20,8 @@
         android:layout_weight="1"
         android:text="Made with Love"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -28,7 +30,8 @@
         android:layout_weight="1"
         android:text="By"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="@android:color/white"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -37,7 +40,8 @@
         android:layout_weight="1"
         android:text="Mousum Kumar"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="@android:color/white"/>
 
 
 </LinearLayout>

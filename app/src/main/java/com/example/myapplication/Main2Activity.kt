@@ -64,6 +64,7 @@ class Main2Activity : AppCompatActivity() {
         if (item.itemId == R.id.action_about) {
             val dialog = Dialog(this)
             dialog.setContentView(R.layout.about_dialog)
+            dialog.window?.setBackgroundDrawableResource(R.drawable.about_bg)
             dialog.show()
         }
         return super.onOptionsItemSelected(item)
