@@ -1,1 +1,1 @@
-PersonalTM is an android application for personal task manager. 
+PersonalTM is an android application for managing your tasks in a To-do-list manner. 
